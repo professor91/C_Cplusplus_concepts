@@ -1,2 +1,2 @@
 # Cplusplus-concepts
-Concept codes for C++.
+Concept codes for C++
