@@ -1,0 +1,43 @@
+byte
+int
+char
+float
+double
+void
+enum
+
+const
+
+Storage classes
+auto
+register    -   decalres a variable that should be stored in register and not in RAM (used for variable that require quick access)
+static      -   it prevents from making copies of the variable. If global variable is declared as static then it's access will be limited to the file in which it is declared
+extern      -   enables a global variable accessable across files. However, it points to a already declared variable
+
+signed
+unsigned
+short
+long
+
+typedef
+sizeof
+union
+
+if
+else
+switch
+case
+default
+
+for
+do
+while
+
+goto
+break
+return
+continue
+
+struct
+volatile
+_Packed
