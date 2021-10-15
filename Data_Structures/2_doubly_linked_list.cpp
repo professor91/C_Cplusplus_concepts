@@ -13,12 +13,12 @@ class Node{
             }
 };
 
-void print(Node*);
-void insertAtHead(Node*&, int);
-void insertAtTail(Node*&, int);
-void deletion(Node*&, int);
-void deleteAtHead(Node*&);
-bool search(Node*, int);
+void print(Node*);                  //print the linked list
+void insertAtHead(Node*&, int);     //insert a node at head of linked list
+void insertAtTail(Node*&, int);     //insert a node at tail of linked list
+void deletion(Node*&, int);         //delete a node from the linked list
+void deleteAtHead(Node*&);          //delete head node from the linked list
+bool search(Node*, int);            //search in linked list
 
 int main(){
     Node* first = NULL;
