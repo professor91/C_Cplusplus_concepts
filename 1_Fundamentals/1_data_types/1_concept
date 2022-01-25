@@ -1,0 +1,32 @@
+/************************************ Basic Data Types ************************************/
+type                            size
+
+char                            1 byte
+int                             4 bytes
+float                           4 bytes
+
+bool                            
+string
+
+/************************************ Advanced Data Types ************************************/
+type                            size                                range
+
+signed char (char)              1 byte	                            -128 to 127
+unsigned char	                1 byte	                             0 to 255
+
+signed int (int)                4 bytes	                            -2,147,483,648 to 2,147,483,647
+unsigned int	                4 bytes	                             0 to 4,294,967,295
+
+short signed int (short int)    2 bytes 	                        -32,768 to 32,767
+short unsigned int	            2 bytes	                             0 to 65,535
+
+long signed int (long int)      8 bytes or (4 bytes for 32 bit OS)	-92,23,37,20,36,85,47,75,808 to 92,23,37,20,36,85,47,75,807
+long unsigned int               8 bytes	                             0 to 1,84,46,74,40,73,70,95,51,615
+
+float	                        4 byte	                             1.2E-38 to 3.4E+38	        6 decimal places
+double	                        8 byte	                             2.3E-308 to 1.7E+308	    15 decimal places
+long double	                    10 byte	                             3.4E-4932 to 1.1E+4932	    19 decimal places
+
+wchar_t                         2/4 bytes                             
+
+void

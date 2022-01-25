@@ -54,7 +54,12 @@ int main(){
     printf("\nValue of str is: ");
     puts(str);
 
-// scanf() & printf()
+// scanf()
+    printf("\nEnter value of a: ");
+    scanf("%d", a);
+    
+    printf("\nEnter the value of str: ");
+    scanf("%s", str);
     
 return 0;
 }

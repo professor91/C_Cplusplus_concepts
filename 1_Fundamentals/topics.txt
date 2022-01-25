@@ -1,0 +1,12 @@
+1. what is coding?
+2. data (variable and constant) and data types
+3. I/O
+4. conditionals - if/else  |  switch-case
+5. loops - for  |  while   |  do-while
+6. Exception Handeling
+7. File Handeling
+8. Data Structures (array / list / dictionary)
+9. pointers and memory
+10. OOPS (struct and classes)
+11. Deeper in oops
+12. Advanced Data Structures (stack / queue / linked list / trees / maps)

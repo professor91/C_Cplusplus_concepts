@@ -14,7 +14,9 @@ int fact(int n)
     {
         return n * fact(n-1);
     }
+    cout << "here";
 }
+
 int main()
 {
     int x;
