@@ -1,0 +1,14 @@
+There are 3 classes in C++ for File Handeling in C++
+
+ofstream:   write in files
+ifstream:   read from files
+fstream:    to read and write in files
+
+Modes:
+    in          input
+    out         output
+    binary      binary          perform I/O in binary mode
+    ate         at end          O/P position starts at the EOF
+    app         append          data is appended to the existing data present in file
+    trunc       truncate        all previous content is discarded
+
