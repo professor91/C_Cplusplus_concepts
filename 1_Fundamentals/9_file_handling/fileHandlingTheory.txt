@@ -12,3 +12,7 @@ Modes:
     app         append          data is appended to the existing data present in file
     trunc       truncate        all previous content is discarded
 
+
+Opening Modes:
+
+Creating a new file

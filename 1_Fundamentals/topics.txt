@@ -4,11 +4,11 @@ I/O
 conditionals - if/else  |  switch-case
 loops - for  |  while   |  do-while
 OOPS (struct and classes)
+pointers
+File Handeling
 
 Exception Handeling
-File Handeling
 Data Structures (array / list / dictionary)
-pointers and memory
 Advanced Data Structures (stack / queue / linked list / trees / maps)
 Templates & Namespaces
 Concurrency
