@@ -6,16 +6,21 @@ loops - for  |  while   |  do-while
 OOPS (struct and classes)
 pointers
 File Handeling
-
 Exception Handeling
+
 Data Structures (array / list / dictionary)
 Advanced Data Structures (stack / queue / linked list / trees / maps)
+
 Templates & Namespaces
-Concurrency
 lambda functions
-I/O streams, Dynamic Memory and STL
+
+Concurrency
 Multithreading
+
+I/O streams, Dynamic Memory and STL
+
 Iterators
 Macros
+
 Preprocessor
 Signal Handeling
