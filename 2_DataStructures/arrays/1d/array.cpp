@@ -14,7 +14,6 @@
  */
 
 #include"default.h"
-#include"sorting.h"
 #include"searching.h"
 
 // display array 
@@ -114,9 +113,20 @@ int main() {
     show(temp, size);
 
     // search
+    int result;
+    
     log("\n-------- Searching --------" << std:: endl);
     log("1. Linear Search" << std:: endl);
-    int result= linearSearch(a, size, 4);
+    result= linearSearch(a, size, 4);
+    if (result == -1) {
+        log("Element not found" << std:: endl);
+    }
+    else {
+        log("Element found at index: " << result << std:: endl);
+    }
+
+    log("1. Binary Search" << std:: endl);
+    result= binarySearch(temp, size, 6);        // passing temp becoz binary search require sorted array
     if (result == -1) {
         log("Element not found");
     }
@@ -127,6 +137,7 @@ int main() {
     // dynamic array allocation
     // int *a;
 
+    log(std::endl);
 return 0;
 }
 

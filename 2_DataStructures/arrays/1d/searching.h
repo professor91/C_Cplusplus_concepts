@@ -8,7 +8,6 @@ int linearSearch (int a[], int size, int elem) {
      *  otherwise return -1
     */
 
-    log("Searching");
     bool found= false;
     int index;
 
@@ -30,10 +29,29 @@ return index;
 
 int binarySearch (int a[], int size, int elem) {
     /*  Binary Search
-     *  
-     *  
+     *  The array must be sorted for binary search
+     *  Divide the array in two halfs
+     *  Compare the middle term of the array and with the key to be searched
+     *  if the key is larger then take the right part and do the same
+     *  else take the left part
+     *  Repeat it until the value is not found
      *  
     */
 
+    int beg= 0, last= size;
 
+    while (beg <= last) {
+        int mid= (beg+last)/2;
+
+        if (a[mid] == elem) {
+            return mid;
+        }
+        else if (elem < a[mid]) {
+            last= mid-1;
+        }
+        else {
+            beg= mid+1;
+        }
+    }
+return -1;
 }
