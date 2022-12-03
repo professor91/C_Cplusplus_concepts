@@ -1,0 +1,26 @@
+/*
+        Infix Notation                      -   Humans Understand
+<oparand> <operator> <operand>
+
+        Prefix (Polish) Notation            -   Bring operator out of bracket and put before the bracket (left)
+<operator> <operand> <operand>
+
+        Postfix (Reverse Polish) Notation   -   Bring operator out of bracket and put after the bracker (right)
+<operand> <operand> <operator>
+
+*/
+
+/*
+Precedence order
+
+Up-to-Down          Associativity
+
+1. ()/ {}/ []       
+2. ^                Right-to-Left
+3. *, /             Left-to-Right
+4. +, -             Left-to-Right
+
+*/
+
+/**/
+
