@@ -1,0 +1,83 @@
+PART 1 - Fundamentals
+
+Ch-01 Introduction
+Cmake is a tool that builds, tests and makes collection of files user ready in form of packages.
+
+CMakeLists.txt is a human-readable file that defines what should be built and how, what tests to run and what package(s) to create. It is platform independent description of the whole project
+
+The fundamental part of CMake is the concept of a project having both a source directroy and a binary directory
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ch-02 Setting up a Project
+Source directory containes source files and all other files needed for the build along with CMakeLists.txt
+Binary directory is where everything is produced by the build is created. Also called build directory.
+
+In-source builds is an arrangement in which source and build files are in the same directories, this is discouraged because this makes maintanence of the project difficult
+
+Out-source builds is an arrangement in which source and build files are in different directories under the same parent directory. This is an often used arrangement as there is no intermixing problems experienced with in-source builds and there can also be multiple build files for the same source
+
+    BASE_DIR
+    |
+    |-->src
+    |   |---> CMakeLists.txt
+    |   |---> ... source files
+    |
+    |-->build
+        |---> CMakeCache.txt
+        |---> ... build output files  
+        
+
+Once the choice of directory structure has been made, the developer runs CMake, which reads in the CMakeLists.txt file and creates project files in the build directory. The developer selects the type of project file to be created by choosing a particular project file generator.
+
+The most basic way to run CMake is via the cmake command line utility. The simplest way to invoke it is to change to the build directory and pass options to cmake for the generator type and location of the source tree. For example:
+
+```
+mkdir build
+cd build
+cmake -G "Unix Makefiles" ../source
+```
+
+If the -G option is omitted, CMake will choose a default generator type based on the host platform. If using CMake 3.15 or later, this default can be overridden by setting the CMAKE_GENERATOR environment variable to the desired default instead. A variety of information will be logged before CMake finishes with lines like the following upon success:
+
+```
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /some/path/build
+```
+The above hilights that project file creation actually involves two steps: configurations and generation.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Ch-03 A Minimal Project
+
+Minimal Project cmake file
+CMakeLists.txt
+
+(content in between ``` ... ``` is code)
+
+```
+cmake_minimum_required(VERSION 3.2)
+project(MyApp)
+add_executable(myExe main.cpp)
+```
+
+- above 3 are inbuild functions in cmake. they are case insensitive
+
+- "project" command
+    - it is a good practice to specify languages used in the project. project command checks for the compilers for each enabled language and ensure that they are able to compile and link successfully.
+
+```
+project(projectName 
+        [VERSION major.minor] 
+        [LANGUAGES langageName ...]
+)
+```
+
+- "add_executable" command
+    - his creates an executable which
+```
+add_executable(targetName source1 [source2 ...])
+```
+
+commands in cmake are case insensitive
+
+
